@@ -1,0 +1,434 @@
+{
+    "Jotunheimen": {
+        "offisieltNavn": "Jotunheimen nasjonalpark",
+        "navn": "Jotunheimen",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20141114",
+        "landareal": "1151000.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Sassen-B\u00fcnsow Land": {
+        "offisieltNavn": "Sassen-B\u00fcnsow Land nasjonalpark",
+        "navn": "Sassen-B\u00fcnsow Land",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20030926",
+        "landareal": "1157000.00000000",
+        "sj\u00f8areal": "73000.00000000",
+        "majorEcosystemType": "marinOgTerrestrisk"
+    },
+    "Varangerhalv\u00f8ya": {
+        "offisieltNavn": "Varangerhalv\u00f8ya nasjonalpark/V\u00e1rnj\u00e1rgga \u00e1lbmotmeahcci/ Varenkinniemen kansalistaras",
+        "navn": "Varangerhalv\u00f8ya",
+        "f\u00f8rstegangVernet": "20061208",
+        "vernedato": "20061208",
+        "landareal": "1804000.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Bl\u00e5fjella-Skj\u00e6kerfjella": {
+        "offisieltNavn": "Bl\u00e5fjella-Skj\u00e6kerfjella/L\u00e5arte-Sk\u00e6hkere nasjonalpark",
+        "navn": "Bl\u00e5fjella-Skj\u00e6kerfjella",
+        "f\u00f8rstegangVernet": "19700206",
+        "vernedato": "20041217",
+        "landareal": "1968000.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Indre Wijdefjorden": {
+        "offisieltNavn": "Indre Wijdefjorden nasjonalpark",
+        "navn": "Indre Wijdefjorden",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20050909",
+        "landareal": "745000.00000000",
+        "sj\u00f8areal": "382000.00000000",
+        "majorEcosystemType": "marinOgTerrestrisk"
+    },
+    "Hardangervidda": {
+        "offisieltNavn": "Hardangervidda nasjonalpark",
+        "navn": "Hardangervidda",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "19810410",
+        "landareal": "3422000.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "L\u00e1hko": {
+        "offisieltNavn": "L\u00e1hko nasjonalpark",
+        "navn": "L\u00e1hko",
+        "f\u00f8rstegangVernet": "20121214",
+        "vernedato": "20121214",
+        "landareal": "188000.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Van Mijenfjorden": {
+        "offisieltNavn": "Van Mijenfjorden nasjonalpark",
+        "navn": "Van Mijenfjorden",
+        "f\u00f8rstegangVernet": "20030926",
+        "vernedato": "20210618",
+        "landareal": "3119000.00000000",
+        "sj\u00f8areal": "1132000.00000000",
+        "majorEcosystemType": "marinOgTerrestrisk"
+    },
+    "Forlandet": {
+        "offisieltNavn": "Forlandet nasjonalpark",
+        "navn": "Forlandet",
+        "f\u00f8rstegangVernet": "19730701",
+        "vernedato": "20140501",
+        "landareal": "616000.00000000",
+        "sj\u00f8areal": "4018000.00000000",
+        "majorEcosystemType": "marinOgTerrestrisk"
+    },
+    "Reinheimen": {
+        "offisieltNavn": "Reinheimen nasjonalpark",
+        "navn": "Reinheimen",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20061124",
+        "landareal": "1969000.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Nordvest-Spitsbergen": {
+        "offisieltNavn": "Nordvest-Spitsbergen nasjonalpark",
+        "navn": "Nordvest-Spitsbergen",
+        "f\u00f8rstegangVernet": "19730701",
+        "vernedato": "20140501",
+        "landareal": "3684000.00000000",
+        "sj\u00f8areal": "6189000.00000000",
+        "majorEcosystemType": "marinOgTerrestrisk"
+    },
+    "Rago": {
+        "offisieltNavn": "Rago nasjonalpark",
+        "navn": "Rago",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "19710122",
+        "landareal": "171000.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Stabbursdalen": {
+        "offisieltNavn": "Stabbursdalen nasjonalpark/R\u00e1vtto\u0161vuomi \u00c1lbmotmeahcci",
+        "navn": "Stabbursdalen",
+        "f\u00f8rstegangVernet": "19700206",
+        "vernedato": "20021220",
+        "landareal": "746900.00000000",
+        "sj\u00f8areal": null,
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Skarvan og Roltdalen": {
+        "offisieltNavn": "Skarvan og Roltdalen nasjonalpark",
+        "navn": "Skarvan og Roltdalen",
+        "f\u00f8rstegangVernet": "20040220",
+        "vernedato": "20040220",
+        "landareal": "441370.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "\u00d8vre Pasvik": {
+        "offisieltNavn": "\u00d8vre Pasvik nasjonalpark/B\u00e1h\u010daveaji \u00c1lbmotmeahcci",
+        "navn": "\u00d8vre Pasvik",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20030829",
+        "landareal": "119000.00000000",
+        "sj\u00f8areal": null,
+        "majorEcosystemType": "terrestrisk"
+    },
+    "S\u00f8r-Spitsbergen": {
+        "offisieltNavn": "S\u00f8r-Spitsbergen nasjonalpark",
+        "navn": "S\u00f8r-Spitsbergen",
+        "f\u00f8rstegangVernet": "19730701",
+        "vernedato": "20140501",
+        "landareal": "5030000.00000000",
+        "sj\u00f8areal": "8198000.00000000",
+        "majorEcosystemType": "marinOgTerrestrisk"
+    },
+    "An\u00e1rjohka": {
+        "offisieltNavn": "An\u00e1rjoga \u00e1lbmotmeahcci/An\u00e1rjohka nasjonalpark",
+        "navn": "An\u00e1rjohka",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "19751219",
+        "landareal": "1390000.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Breheimen": {
+        "offisieltNavn": "Breheimen nasjonalpark",
+        "navn": "Breheimen",
+        "f\u00f8rstegangVernet": "20090807",
+        "vernedato": "20090807",
+        "landareal": "1691000.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Langsua": {
+        "offisieltNavn": "Langsua nasjonalpark",
+        "navn": "Langsua",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20110311",
+        "landareal": "537100.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Dovre": {
+        "offisieltNavn": "Dovre nasjonalpark",
+        "navn": "Dovre",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20031024",
+        "landareal": "289100.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Femundsmarka": {
+        "offisieltNavn": "Femundsmarka nasjonalpark",
+        "navn": "Femundsmarka",
+        "f\u00f8rstegangVernet": "19710709",
+        "vernedato": "20030221",
+        "landareal": "573000.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Forollhogna": {
+        "offisieltNavn": "Forollhogna nasjonalpark",
+        "navn": "Forollhogna",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20011221",
+        "landareal": "1061900.00000000",
+        "sj\u00f8areal": null,
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Jostedalsbreen": {
+        "offisieltNavn": "Jostedalsbreen nasjonalpark",
+        "navn": "Jostedalsbreen",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "19911025",
+        "landareal": "1310000.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Lomsdal-Visten": {
+        "offisieltNavn": "Lomsdal-Visten nasjonalpark/Njaarken vaarjelimmiedajve",
+        "navn": "Lomsdal-Visten",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20090529",
+        "landareal": "1102000.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Rondane": {
+        "offisieltNavn": "Rondane nasjonalpark",
+        "navn": "Rondane",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20031024",
+        "landareal": "963500.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Raet": {
+        "offisieltNavn": "Raet nasjonalpark",
+        "navn": "Raet",
+        "f\u00f8rstegangVernet": "20161216",
+        "vernedato": "20161216",
+        "landareal": "8000.00000000",
+        "sj\u00f8areal": "599000.00000000",
+        "majorEcosystemType": "marinOgTerrestrisk"
+    },
+    "Seiland": {
+        "offisieltNavn": "Seiland nasjonalpark",
+        "navn": "Seiland",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20061208",
+        "landareal": "306700.00000000",
+        "sj\u00f8areal": "9600.00000000",
+        "majorEcosystemType": "marinOgTerrestrisk"
+    },
+    "Reisa": {
+        "offisieltNavn": "Reisa nasjonalpark/R\u00e1isa \u00e1lbmotlas meahcci",
+        "navn": "Reisa",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "19861128",
+        "landareal": "803000.00000000",
+        "sj\u00f8areal": null,
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Junkerdal": {
+        "offisieltNavn": "Junkerdal nasjonalpark/Ju\u014b\u014bkaravuome nasjonalp\u00e1rkka",
+        "navn": "Junkerdal",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20040109",
+        "landareal": "682000.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Lofotodden": {
+        "offisieltNavn": "Lofotodden nasjonalpark",
+        "navn": "Lofotodden",
+        "f\u00f8rstegangVernet": "20180622",
+        "vernedato": "20180622",
+        "landareal": "86000.00000000",
+        "sj\u00f8areal": "13000.00000000",
+        "majorEcosystemType": "marinOgTerrestrisk"
+    },
+    "Sjunkhatten": {
+        "offisieltNavn": "Sjunkhatten nasjonalpark/D\u00e1vga suoddjimp\u00e1rkka",
+        "navn": "Sjunkhatten",
+        "f\u00f8rstegangVernet": "20100205",
+        "vernedato": "20100205",
+        "landareal": "377700.00000000",
+        "sj\u00f8areal": "39800.00000000",
+        "majorEcosystemType": "marinOgTerrestrisk"
+    },
+    "Dovrefjell-Sunndalsfjella": {
+        "offisieltNavn": "Dovrefjell-Sunndalsfjella nasjonalpark",
+        "navn": "Dovrefjell-Sunndalsfjella",
+        "f\u00f8rstegangVernet": "19740621",
+        "vernedato": "20180420",
+        "landareal": "1829500.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "M\u00f8ysalen": {
+        "offisieltNavn": "M\u00f8ysalen nasjonalpark",
+        "navn": "M\u00f8ysalen",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20030829",
+        "landareal": "50100.00000000",
+        "sj\u00f8areal": "1100.00000000",
+        "majorEcosystemType": "marinOgTerrestrisk"
+    },
+    "\u00c5nderdalen": {
+        "offisieltNavn": "\u00c5nderdalen nasjonalpark",
+        "navn": "\u00c5nderdalen",
+        "f\u00f8rstegangVernet": "19700206",
+        "vernedato": "20180622",
+        "landareal": "133996.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Lierne": {
+        "offisieltNavn": "Lierne/Lijre nasjonalpark",
+        "navn": "Lierne",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20041217",
+        "landareal": "333000.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Rohkunborri": {
+        "offisieltNavn": "Rohkunborri nasjonalpark",
+        "navn": "Rohkunborri",
+        "f\u00f8rstegangVernet": "20110224",
+        "vernedato": "20110225",
+        "landareal": "556000.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Folgefonna": {
+        "offisieltNavn": "Folgefonna nasjonalpark",
+        "navn": "Folgefonna",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20050429",
+        "landareal": "545200.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "F\u00e6rder": {
+        "offisieltNavn": "F\u00e6rder nasjonalpark",
+        "navn": "F\u00e6rder",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20130823",
+        "landareal": "15000.00000000",
+        "sj\u00f8areal": "325000.00000000",
+        "majorEcosystemType": "marinOgTerrestrisk"
+    },
+    "Jomfruland": {
+        "offisieltNavn": "Jomfruland nasjonalpark",
+        "navn": "Jomfruland",
+        "f\u00f8rstegangVernet": "20161216",
+        "vernedato": "20161216",
+        "landareal": "2400.00000000",
+        "sj\u00f8areal": "114300.00000000",
+        "majorEcosystemType": "marinOgTerrestrisk"
+    },
+    "Hallingskarvet": {
+        "offisieltNavn": "Hallingskarvet nasjonalpark",
+        "navn": "Hallingskarvet",
+        "f\u00f8rstegangVernet": "20061222",
+        "vernedato": "20061222",
+        "landareal": "450000.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Gutulia": {
+        "offisieltNavn": "Gutulia nasjonalpark",
+        "navn": "Gutulia",
+        "f\u00f8rstegangVernet": "19681220",
+        "vernedato": "20040910",
+        "landareal": "23000.00000000",
+        "sj\u00f8areal": null,
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Nordre Isfjorden": {
+        "offisieltNavn": "Nordre Isfjorden nasjonalpark",
+        "navn": "Nordre Isfjorden",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20030926",
+        "landareal": "2050000.00000000",
+        "sj\u00f8areal": "904000.00000000",
+        "majorEcosystemType": "marinOgTerrestrisk"
+    },
+    "\u00d8vre Dividal": {
+        "offisieltNavn": "\u00d8vre Dividal nasjonalpark/Diev\u00e1idvuovddi \u00e1lbmotmeahcci",
+        "navn": "\u00d8vre Dividal",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20061201",
+        "landareal": "770000.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Ytre Hvaler": {
+        "offisieltNavn": "Ytre Hvaler nasjonalpark",
+        "navn": "Ytre Hvaler",
+        "f\u00f8rstegangVernet": "20090626",
+        "vernedato": "20090626",
+        "landareal": "14000.00000000",
+        "sj\u00f8areal": "340000.00000000",
+        "majorEcosystemType": "marinOgTerrestrisk"
+    },
+    "B\u00f8rgefjell/Byrkije": {
+        "offisieltNavn": "B\u00f8rgefjell/Byrkije nasjonalpark",
+        "navn": "B\u00f8rgefjell/Byrkije",
+        "f\u00f8rstegangVernet": "19630808",
+        "vernedato": "20030829",
+        "landareal": "1447000.00000000",
+        "sj\u00f8areal": null,
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Saltfjellet-Svartisen": {
+        "offisieltNavn": "Saltfjellet-Svartisen nasjonalpark",
+        "navn": "Saltfjellet-Svartisen",
+        "f\u00f8rstegangVernet": "19890907",
+        "vernedato": "20201015",
+        "landareal": "2186000.00000000",
+        "sj\u00f8areal": "6000.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "Fulufjellet": {
+        "offisieltNavn": "Fulufjellet nasjonalpark",
+        "navn": "Fulufjellet",
+        "f\u00f8rstegangVernet": "20120427",
+        "vernedato": "20120427",
+        "landareal": "82500.00000000",
+        "sj\u00f8areal": "0.00000000",
+        "majorEcosystemType": "terrestrisk"
+    },
+    "\u00d8stmarka": {
+        "offisieltNavn": "\u00d8stmarka nasjonalpark",
+        "navn": "\u00d8stmarka",
+        "f\u00f8rstegangVernet": null,
+        "vernedato": "20231109",
+        "landareal": "53914.00000000",
+        "sj\u00f8areal": null,
+        "majorEcosystemType": "terrestrisk"
+    }
+}

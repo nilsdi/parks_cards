@@ -3,6 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# data
+data/N50/
+data/protected_areas
+
+*.png
 # C extensions
 *.so
 
