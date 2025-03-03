@@ -179,5 +179,11 @@ save_ready_path = root_dir / "data/card_details/national_parks_properties.json"
 with open(save_ready_path, "w") as f:
     json.dump(ready_properties, f)
 
+# %% save national park geometries
+national_parks_geo = {p["properties"]["navn"]: p["geometry"] for p in national_parks}
+geo_save_path = root_dir / "data/card_details/national_parks_geo.json"
+with open(geo_save_path, "w") as f:
+    json.dump(national_parks_geo, f)
+
 
 # %%
