@@ -521,6 +521,8 @@ def plot_NP_map(
     np_gdf.plot(ax=ax, color="none", edgecolor="darkgreen", linewidth=6, linestyle="--")
     ax.title.set_text(f"{np_name} National Park")
 
+    if np_name == "Børgefjell/Byrkije":
+        np_name = "Børgefjell_Byrkije"
     fig.savefig(
         root_dir / f"data/park_maps/{np_name}_map.png", dpi=300, bbox_inches="tight"
     )
@@ -533,203 +535,58 @@ def plot_NP_map(
 if __name__ == "__main__":
     # print_national_park_names()
     NP_names = get_national_parks_names()
+    # print(NP_names)
     test_NPs = [
-        "Rago",
         # "Jotunheimen",
+        # "Sassen-Bünsow Land",
+        # "Varangerhalvøya",
+        # "Blåfjella-Skjækerfjella",
+        # "Indre Wijdefjorden",
         # "Hardangervidda",
-        # "Saltfjellet-Svartisen",
-        # "Østmarka",
-        # "Dovre",
-        # "Forollhogna",
-        # "Femundsmarka",
-        # "Jomfruland",
-        # "Gutulia",
+        # "Láhko",
         # "Van Mijenfjorden",
+        # "Forlandet",
+        # "Reinheimen",
         # "Nordvest-Spitsbergen",
+        # "Rago",
+        # "Stabbursdalen",
+        # "Skarvan og Roltdalen",
+        # "Øvre Pasvik",
+        # "Sør-Spitsbergen",
+        # "Anárjohka",
+        # "Breheimen",
+        # "Langsua",
+        # "Dovre",
+        # "Femundsmarka",
+        # "Forollhogna",
+        # "Jostedalsbreen",
+        # "Lomsdal-Visten",
+        # "Rondane",
+        # "Raet",
+        # "Seiland",
+        # "Reisa",
+        # "Junkerdal",
+        # "Lofotodden",
+        # "Sjunkhatten",
+        # "Dovrefjell-Sunndalsfjella",
+        # "Møysalen",
+        # "Ånderdalen",
+        # "Lierne",
+        # "Rohkunborri",
+        # "Folgefonna",
+        # "Færder",
+        # "Jomfruland",
+        # "Hallingskarvet",
+        # "Gutulia",
+        # "Nordre Isfjorden",
+        # "Øvre Dividal",
+        # "Ytre Hvaler",
+        "Børgefjell/Byrkije",
+        "Saltfjellet-Svartisen",
+        "Fulufjellet",
+        "Østmarka",
     ]
-    for np_name in NP_names:  # test_NPs:  # NP_names:
+    for np_name in test_NPs:  # NP_names:
         plot_NP_map(np_name, figsize=(20, 10), relief_map_resolution="auto")
 
-# %%
-layer = "N50_AdministrativeOmråder_grense"
-admin_gdf = gpd.read_file(N50_path, layer=layer)
-# print the different object types
-print(admin_gdf["objtype"].unique())
-# plot the "Riksgrense" object type
-fig, ax = plt.subplots(1, 1, figsize=(10, 10))
-admin_gdf[admin_gdf["objtype"] == "Riksgrense"].plot(ax=ax)
-admin_gdf[admin_gdf["objtype"] == "Territorialgrense"].plot(ax=ax)
-plt.show()
-
-# combine Riksgrense and Territorialgrense lines into one large line and make a bounding polygon
-print(admin_gdf[admin_gdf["objtype"] == "Riksgrense"])
-print(admin_gdf[admin_gdf["objtype"] == "Territorialgrense"])
-
-# %%
-admin_gdf[admin_gdf["objtype"] == "Grunnlinje"].plot()
-
-# %%
-import geopandas as gpd
-from shapely.geometry import MultiLineString, Polygon
-from shapely.ops import unary_union, polygonize
-
-# Read the MultiLineString objects from your GeoDataFrame
-layer = "N50_AdministrativeOmråder_grense"
-admin_gdf = gpd.read_file(N50_path, layer=layer)
-
-# Filter the relevant object types (e.g., "Riksgrense" and "Territorialgrense")
-relevant_gdf = admin_gdf[admin_gdf["objtype"].isin(["Riksgrense", "Territorialgrense"])]
-
-# Combine the MultiLineString objects into a single geometry
-combined_lines = unary_union(relevant_gdf.geometry)
-
-# Use polygonize to create polygons from the combined lines
-polygons = list(polygonize(combined_lines))
-
-# Merge the resulting polygons into a single MultiPolygon
-norway_boundary = unary_union(polygons)
-
-# Create a GeoDataFrame for the boundary
-norway_boundary_gdf = gpd.GeoDataFrame(geometry=[norway_boundary], crs=admin_gdf.crs)
-
-# Plot the boundary
-fig, ax = plt.subplots(1, 1, figsize=(10, 10))
-norway_boundary_gdf.plot(ax=ax, edgecolor="black", facecolor="red")
-plt.title("Boundary of Norway")
-plt.xlabel("Easting")
-plt.ylabel("Northing")
-plt.show()
-
-
-def get_Norway_boundaries(goal_crs: int = 25833):
-    layer = "N50_AdministrativeOmråder_grense"
-    admin_gdf = gpd.read_file(N50_path, layer=layer)
-    relevant_gdf = admin_gdf[
-        admin_gdf["objtype"].isin(["Riksgrense", "Territorialgrense"])
-    ]
-    combined_lines = unary_union(relevant_gdf.geometry)
-    polygons = list(polygonize(combined_lines))
-    norway_boundary = unary_union(polygons)
-    norway_boundary_gdf = gpd.GeoDataFrame(
-        geometry=[norway_boundary], crs=admin_gdf.crs
-    )
-    norway_boundary_gdf.to_crs(epsg=goal_crs, inplace=True)
-    return norway_boundary_gdf
-
-
-def white_out_non_Norway(
-    ax: plt.Axes, norway_boundary_gdf: gpd.GeoDataFrame, bounding_box: tuple
-):
-    box_coords = [
-        (bounding_box[0], bounding_box[1]),
-        (bounding_box[0], bounding_box[3]),
-        (bounding_box[2], bounding_box[3]),
-        (bounding_box[2], bounding_box[1]),
-        (bounding_box[0], bounding_box[1]),
-    ]
-    white_out_box = Polygon(box_coords)
-    for geom in norway_boundary_gdf.geometry:
-        white_out_box = difference(white_out_box, geom)
-    # white_out_box = difference(white_out_box, norway_boundary_gdf.geometry[0])
-    white_out_gdf = gpd.GeoDataFrame(geometry=[white_out_box])
-    white_out_gdf.plot(ax=ax, color="white", edgecolor="none", alpha=1)
-
-
-# %%
-np_name = "Hardangervidda"
-np_gdf = get_np_geo(np_name)
-np_bounds = tuple(np_gdf.total_bounds)
-# make the bounds square
-width = np_bounds[2] - np_bounds[0]
-height = np_bounds[3] - np_bounds[1]
-if width > height:
-    missing_height = width - height
-    np_bounds = (
-        np_bounds[0],
-        np_bounds[1] - missing_height / 2,
-        np_bounds[2],
-        np_bounds[3] + missing_height / 2,
-    )
-else:
-    missing_width = height - width
-    np_bounds = (
-        np_bounds[0] - missing_width / 2,
-        np_bounds[1],
-        np_bounds[2] + missing_width / 2,
-        np_bounds[3],
-    )
-outer_margin = 10000
-np_bounds_outer = (
-    np_bounds[0] - outer_margin,
-    np_bounds[1] - outer_margin,
-    np_bounds[2] + outer_margin,
-    np_bounds[3] + outer_margin,
-)
-inner_margin = 3000
-np_bounds_inner = (
-    np_bounds[0] - inner_margin,
-    np_bounds[1] - inner_margin,
-    np_bounds[2] + inner_margin,
-    np_bounds[3] + inner_margin,
-)
-# Create a Polygon from the bounding box
-box_coords = [
-    (np_bounds_inner[0], np_bounds_inner[1]),
-    (np_bounds_inner[0], np_bounds_inner[3]),
-    (np_bounds_inner[2], np_bounds_inner[3]),
-    (np_bounds_inner[2], np_bounds_inner[1]),
-    (np_bounds_inner[0], np_bounds_inner[1]),
-]
-box_coords_outer = [
-    (np_bounds_outer[0], np_bounds_outer[1]),
-    (np_bounds_outer[0], np_bounds_outer[3]),
-    (np_bounds_outer[2], np_bounds_outer[3]),
-    (np_bounds_outer[2], np_bounds_outer[1]),
-    (np_bounds_outer[0], np_bounds_outer[1]),
-]
-box = Polygon(box_coords_outer)
-
-# Create a GeoDataFrame for the box
-box_gdf = gpd.GeoDataFrame(geometry=[box])
-
-# Plot the box
-fig, ax = plt.subplots(1, 1, figsize=(10, 10))
-np_gdf.plot(ax=ax, color="green", edgecolor="darkgreen", linewidth=6, linestyle="--")
-box_gdf.plot(ax=ax, color="grey", edgecolor="blue", linewidth=2, alpha=0.2)
-
-
-norway_boundary_gdf = get_Norway_boundaries()
-white_out_non_Norway(ax, norway_boundary_gdf, np_bounds_outer)
-plt.show()
-
-
-# %%
-from mpl_toolkits.axes_grid1.inset_locator import inset_axes
-
-
-def plot_location_in_Norway(
-    np_geo: gpd.GeoDataFrame, norway_boundary_gdf: gpd.GeoDataFrame, ax: plt.Axes
-):
-    # Create an inset axis in the top left corner
-    inset_ax = inset_axes(ax, width="30%", height="30%", loc="upper left")
-    # Plot the Norway boundary and the national park location on the inset axis
-    norway_boundary_gdf.plot(
-        ax=inset_ax, edgecolor="crimson", facecolor=(1, 1, 1, 0.6), linewidth=2
-    )
-    np_geo.plot(ax=inset_ax, color="darkgreen", edgecolor="darkgreen", linewidth=2)
-    # Remove axis labels and ticks from the inset plot
-    inset_ax.axis("off")
-    return
-
-
-# Example usage
-fig, ax = plt.subplots(1, 1, figsize=(10, 10))
-ax.set_xlim(-5, 15)
-ax.set_ylim(55, 75)
-
-plt.title("Location in Norway")
-plt.xlabel("Easting")
-plt.ylabel("Northing")
-plot_location_in_Norway(np_gdf, norway_boundary_gdf, ax)
-plt.show()
 # %%
