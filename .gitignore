@@ -5,7 +5,8 @@ __pycache__/
 
 # data
 data/N50/
-data/protected_areas
+data/protected_areas/
+data/FKB/
 
 *.png
 # C extensions

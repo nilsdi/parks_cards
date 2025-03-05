@@ -73,8 +73,28 @@ def get_national_parks(geo_objects) -> tuple[list]:
     return national_parks, national_parks_names
 
 
+def get_all_protected_areas(geo_objects: dict) -> tuple[list]:
+    protected_areas = []
+    for o in geo_objects:
+        p_keys = o["properties"].keys()
+        if "verneformAggregert" in p_keys:
+            protected_areas.append(o)
+    protected_areas_names = [p["properties"]["navn"] for p in protected_areas]
+    return protected_areas, protected_areas_names
+
+
 national_parks, national_parks_names = get_national_parks(protected_geo_objects)
 print(f"found {len(national_parks)} national parks: {national_parks_names}")
+
+protected_areas, protected_areas_names = get_all_protected_areas(protected_geo_objects)
+print(f"found {len(protected_areas)} protected areas: {protected_areas_names}")
+
+protected_areas_geo = {p["properties"]["navn"]: p["geometry"] for p in protected_areas}
+
+# save to a json
+save_path = root_dir / "data/card_details/protected_areas_geo.json"
+with open(save_path, "w") as f:
+    json.dump(protected_areas_geo, f)
 
 
 # %%
