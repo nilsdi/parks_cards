@@ -519,12 +519,15 @@ def plot_NP_map(
     white_out_non_Norway(ax, norway_boundary_gdf, np_bounds_inner)
     ax = plot_location_in_Norway(np_gdf, norway_boundary_gdf, ax)
     np_gdf.plot(ax=ax, color="none", edgecolor="darkgreen", linewidth=6, linestyle="--")
-    ax.title.set_text(f"{np_name} National Park")
+    # ax.title.set_text(f"{np_name} National Park")
 
     if np_name == "Børgefjell/Byrkije":
         np_name = "Børgefjell_Byrkije"
     fig.savefig(
-        root_dir / f"data/park_maps/{np_name}_map.png", dpi=300, bbox_inches="tight"
+        root_dir / f"data/park_maps/{np_name}_map.png",
+        dpi=300,
+        bbox_inches="tight",
+        pad_inches=0,
     )
     plt.show()
     return
@@ -558,33 +561,33 @@ if __name__ == "__main__":
         # "Langsua",
         # "Dovre",
         # "Femundsmarka",
-        # "Forollhogna",
-        # "Jostedalsbreen",
-        # "Lomsdal-Visten",
-        # "Rondane",
-        # "Raet",
-        # "Seiland",
-        # "Reisa",
-        # "Junkerdal",
-        # "Lofotodden",
-        # "Sjunkhatten",
-        # "Dovrefjell-Sunndalsfjella",
-        # "Møysalen",
-        # "Ånderdalen",
-        # "Lierne",
-        # "Rohkunborri",
-        # "Folgefonna",
-        # "Færder",
-        # "Jomfruland",
-        # "Hallingskarvet",
-        # "Gutulia",
-        # "Nordre Isfjorden",
-        # "Øvre Dividal",
-        # "Ytre Hvaler",
-        "Børgefjell/Byrkije",
-        "Saltfjellet-Svartisen",
-        "Fulufjellet",
-        "Østmarka",
+        "Forollhogna",
+        #     "Jostedalsbreen",
+        #     "Lomsdal-Visten",
+        #     "Rondane",
+        #     "Raet",
+        #     "Seiland",
+        #     "Reisa",
+        #     "Junkerdal",
+        #     "Lofotodden",
+        #     "Sjunkhatten",
+        #     "Dovrefjell-Sunndalsfjella",
+        #     "Møysalen",
+        #     "Ånderdalen",
+        #     "Lierne",
+        #     "Rohkunborri",
+        #     "Folgefonna",
+        #     "Færder",
+        #     "Jomfruland",
+        #     "Hallingskarvet",
+        #     "Gutulia",
+        #     "Nordre Isfjorden",
+        #     "Øvre Dividal",
+        #     "Ytre Hvaler",
+        #     "Børgefjell/Byrkije",
+        #     "Saltfjellet-Svartisen",
+        #     "Fulufjellet",
+        #     "Østmarka",
     ]
     for np_name in test_NPs:  # NP_names:
         plot_NP_map(np_name, figsize=(20, 10), relief_map_resolution="auto")

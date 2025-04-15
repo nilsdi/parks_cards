@@ -7,6 +7,8 @@ __pycache__/
 data/N50/
 data/protected_areas/
 data/FKB/
+data/ArtFunksjon/
+data/cards_design/
 
 *.png
 # C extensions
